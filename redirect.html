@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>My First zefzefzefze</h1>
-<p>My first paragraph.</p>
+<script>
+  const urlSearchParams = new URLSearchParams(window.location.search);
+const paramToRedirect=urlSearchParams.get('r');
+  if(paramToRedirect){
+window.location=paramToRedirect;
+}else{
+window.location='https://google.com';
+}
+  </script>
+  <body>
 
 </body>
 </html>
